@@ -21,28 +21,28 @@
                     </h2>
                 </header>
                 <div class="shadow-sm pl-6 py-6">
-                    <h2 class="text-4xl font-semibold">0 <span>to</span> 0</h2>
-                    <h3 class="text-xl">Use the buttons below to keep score</h3>
+                    <h2 class="text-4xl font-semibold"> <span id="p1">0</span> to <span id="p2">0</span> </h2>
+                    <h3 class="text-xl font-light">Use the buttons below to keep score</h3>
                     <div class="text-2xl font-bold mt-4">
-                        <label for="score">Playing To</label>
-                        <select name="score" id="score" class="rounded-full text-lg pl-4 w-16 h-8">
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
+                        <label for="gamePoint">Playing To</label>
+                        <select name="gamePoint" id="gamePoint" class="rounded-full text-lg pl-4 w-20 h-10 ml-2">
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                            <option value=11>11</option>
                         </select>
                     </div>
                     
                 </div>
             </div>
             <div class="flex justify-between">
-                <button type="button" id="addP1" class="border-solid border border-white flex-grow text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br font-medium rounded text-xl px-2 py-2.5 text-center">+1 Player One</button>
-                <button type="button" id="addP2"class="border-solid border border-white flex-grow text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded text-xl px-2 py-2.5 text-center">+1 Player Two</button>
+                <button type="button" id="addP1" class="disabled:opacity-40 border-solid border border-white flex-grow text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br font-medium rounded text-xl px-2 py-2.5 text-center">+1 Player One</button>
+                <button type="button" id="addP2"class="disabled:opacity-40 border-solid border border-white flex-grow text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded text-xl px-2 py-2.5 text-center">+1 Player Two</button>
                 <button type="button" id="reset" class="border-solid border border-white flex-grow text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br font-medium rounded text-xl px-2 py-2.5 text-center">Reset</button>
             </div>
         </section>
